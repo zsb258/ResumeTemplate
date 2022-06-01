@@ -17,3 +17,16 @@ Adapted from PlushCV, a one-page two-column resume template, available on [Overl
 ## Preview
 ![alt text](https://github.com/zsb258/ResumeTemplate/blob/master/preview.jpg?raw=true)
 <!-- ![alt text](preview.jpg) -->
+
+<br>
+
+## Installing and Compiling
+1. To install on Linux, run commands:
+```
+sudo apt update
+sudo apt install texlive-full
+```
+2. To compile to PDF, at root directory, run:
+```
+xelatex ./resume.tex
+```
