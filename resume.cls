@@ -157,28 +157,63 @@
 \newcommand{\sectionsep}{\vspace{5pt}}
 
 % Headings command
-\titleformat{\section}{\color{title}
-\scshape\fontspec[Path = \pathtitlefont]{\titlefont}\fontsize{14pt}{16pt}\selectfont \raggedright}{}{0em}{}
+\titleformat{\section}{
+    \color{title}
+    \fontspec[Path = \pathtitlefont]{\titlefont}
+    \fontsize{14pt}{16pt}
+    \selectfont
+    \raggedright
+}{}{0em}{}
 
 % Subheadings command
 \titleformat{\subsection}{
-\color{subheadings}\fontspec[Path = \pathsubheadingfont ]{\subheadingfont}\fontsize{\subheadingsize}{12pt}\selectfont\bfseries\uppercase}{}{0em}{}
+    \color{subheadings}
+    \fontspec[Path = \pathsubheadingfont ]{\subheadingfont}
+    \fontsize{\subheadingsize}{12pt}
+    \selectfont
+    \uppercase
+}{}{0em}{}
 
-%Subheadings on the right
+% Alternate subeadings command
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = \pathsubheadingfont ]{\subheadingfont}\fontsize{\subheadingsize}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+    \color{subheadings}
+    \fontspec[Path = \pathsubheadingfont ]{\subheadingfont}
+    \fontsize{\subheadingsize}{12pt}
+    \selectfont
+    \uppercase{#1} 
+    \normalfont
+}
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = \pathdescriptorfont]{\descriptorfont}\fontsize{\descriptorsize}{12pt}\selectfont {#1 \\} \normalfont}
+    \color{subheadings}
+    \raggedright
+    \fontspec[Path = \pathdescriptorfont]{\descriptorfont}
+    \fontsize{\descriptorsize}{12pt}
+    \selectfont{#1\\} 
+    \normalfont
+}
 
 % Location command
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path = \pathlocationfont]{\locationfont}\fontsize{\locationsize}{11pt}\selectfont {#1\\} \normalfont}
+    \color{headings}
+    \raggedright
+    \fontspec[Path = \pathlocationfont]{\locationfont}
+    \fontsize{\locationsize}{11pt}
+    \selectfont{#1\\} 
+    \normalfont
+}
 
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}[label=\ding{212}]\itemsep1pt \parskip0pt \parsep0pt}
-{\end{itemize}\vspace{-\topsep}}
+    \vspace{-\topsep}
+    \begin{itemize}[label=\ding{212}]
+        \itemsep1pt 
+        \parskip0pt 
+        \parsep0pt
+}{
+    \end{itemize}
+    \vspace{-\topsep}
+}
 
