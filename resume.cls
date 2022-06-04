@@ -163,6 +163,7 @@
     \fontsize{14pt}{16pt}
     \selectfont
     \raggedright
+    \uppercase
 }{}{0em}{}
 
 % Subheadings command
