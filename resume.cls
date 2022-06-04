@@ -28,7 +28,7 @@
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor}
 \definecolor{date}{HTML}{666666}
-\definecolor{title}{HTML}{1e76e2}
+\definecolor{title}{HTML}{15529e}
 \definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6a6a6a}
 \definecolor{subheadings}{HTML}{333333}
@@ -47,7 +47,7 @@
 
 % Main Font Definitions
 \def \pathmainfont {fonts/opensans/}
-\def \mainfont {OpenSans-light}
+\def \mainfont {OpenSans-Regular}
 \def \mainfontbold {OpenSans-semibold}
 % \def \mainbolditalicfont {}
 % \def \mainitalicfont {}
@@ -178,6 +178,7 @@
 % Alternate subeadings command
 \newcommand{\runsubsection}[1]{
     \color{subheadings}
+    \raggedright
     \fontspec[Path = \pathsubheadingfont ]{\subheadingfont}
     \fontsize{\subheadingsize}{12pt}
     \selectfont
